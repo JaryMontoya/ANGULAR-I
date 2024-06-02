@@ -1,6 +1,8 @@
 <div>
-    <label for="capicua-input">Ingresa un número:</label>
-    <input id="capicua-input" [(ngModel)]="inputValue" (input)="checkCapicua(inputValue)">
-    <p>{{ ¿Es capicúa o no?}}</p>
-  </div>
+  <label for="capicua-input">Ingresa un número:</label>
+  <input id="capicua-input" [(ngModel)]="inputValue" (input)="checkCapicua(inputValue)">
+  <p *ngIf="isCapicua !== null">
+    {{ isCapicua ? 'El número es capicúa' : 'El número no es capicúa' }}
+  </p>
+</div>
   
