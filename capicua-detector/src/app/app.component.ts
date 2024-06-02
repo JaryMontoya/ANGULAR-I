@@ -5,9 +5,10 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet],
- templateUrl:'./app.component.html',
+  templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+
+export class AppComponent { 
   title = 'capicua-detector';
 }

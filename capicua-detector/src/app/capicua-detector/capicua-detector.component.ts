@@ -11,7 +11,7 @@ export class CapicuaDetectorComponent {
 
   checkCapicua(value: string): void {
     const num = value.replace(/\D/g, ''); // Elimina cualquier carácter no numérico
-    if (num.length > 1) {
+    if (num.length > 1) { // Asegurarse de que sea de 2 dígitos o más
       const reversedNum = num.split('').reverse().join('');
       if (num === reversedNum) {
         this.message = `${num} es un número capicúa`;
